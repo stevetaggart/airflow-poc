@@ -8,7 +8,7 @@ from code_in_another_file import load_csv
 default_args = {
     'owner': 'owner',
     'depends_on_past': False,
-    'start_date': datetime(2021, 1, 1),
+    'start_date': datetime(2020, 12, 31),
     'email': ['email@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,

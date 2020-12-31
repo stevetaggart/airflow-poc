@@ -6,10 +6,13 @@ from datetime import datetime, timedelta
 
 from code_in_another_file import load_csv
 
+# This DAG requires an external Python package for interacting with Azure
+# See AzureBlobStorageInfo.md for information about running this DAG
+
 default_args = {
     'owner': 'owner',
     'depends_on_past': False,
-    'start_date': datetime(2019, 11, 12),
+    'start_date': datetime(2021, 1, 1),
     'email': ['email@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
